@@ -1,0 +1,14 @@
+mq:
+  host: 127.0.0.1
+  port: 5672
+  username: guest
+  password: guest
+debug: false
+subscribers:
+  "demo":
+    secret: YOURSECRET
+    channels:
+      - exchange: "demo"
+        callback:
+          url: "http://demo.local/api"
+          method: "demo/getNotified"
