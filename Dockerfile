@@ -20,4 +20,4 @@ RUN (curl -sL https://deb.nodesource.com/setup | bash -) && \
 RUN npm install -g debade-agent && mkdir -p /etc/debade
 ADD agent.yml /etc/debade/agent.yml
 
-CMD ["/usr/local/bin/debade-agent", "-c", "/etc/debade/agent.yml"]
+CMD ["/usr/bin/debade-agent", "-c", "/etc/debade/agent.yml"]
