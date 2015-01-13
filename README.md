@@ -1,10 +1,9 @@
-Docker Hub: genee/debade-courier
+Docker Hub: genee/debade-agent
 ===========
-## DeBaDe Courier Environment
+## DeBaDe Agent Environment
 ```bash
-docker build -t genee/debade-courier .
+docker build -t genee/debade-agent .
 
 #simple way
-export BASE_DIR=/mnt/sda1/data
-docker run -d -v /data/etc/debade:/etc/debade genee/debade-courier
+docker run -d -v /data/etc/debade:/etc/debade genee/debade-agent
 ```
