@@ -20,4 +20,4 @@ RUN (curl -sL https://deb.nodesource.com/setup | bash -) && \
 RUN npm install -g debade-trigger && mkdir -p /etc/debade
 ADD trigger.yml /etc/debade/trigger.yml
 
-CMD ["/usr/bin/debade-trigger", "-c", "/etc/debade/agent.yml"]
+CMD ["/usr/bin/debade-trigger", "-c", "/etc/debade/trigger.yml"]
