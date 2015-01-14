@@ -17,7 +17,7 @@ RUN (curl -sL https://deb.nodesource.com/setup | bash -) && \
     apt-get install -y nodejs
 
 
-RUN npm install -g debade-agent && mkdir -p /etc/debade
-ADD agent.yml /etc/debade/agent.yml
+RUN npm install -g debade-trigger && mkdir -p /etc/debade
+ADD trigger.yml /etc/debade/trigger.yml
 
-CMD ["/usr/bin/debade-agent", "-c", "/etc/debade/agent.yml"]
+CMD ["/usr/bin/debade-trigger", "-c", "/etc/debade/agent.yml"]
