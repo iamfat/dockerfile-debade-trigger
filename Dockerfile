@@ -1,8 +1,4 @@
-FROM alpine:3.2
-
-RUN apk update && \
-    apk add nodejs-dev python make g++ && \
-    rm -rf /var/cache/apk/*
+FROM genee/node:0.12
 
 RUN npm install -g debade-trigger
 ADD trigger.yml /etc/debade/trigger.yml
